@@ -1,11 +1,50 @@
-## Artificial Grammar Note Sequence Generator
-Used in: Satkunarajah, P., Sauvé, S.A., & Zendel, B.R. (2023). Tracking the emergence of a pitch hierarchy using an artificial grammar. Frontiers in Cognition.
+# 🎵 Artificial Grammar-Based Chord Sequence Generator
 
-This custom Python tool generates monophonic note sequences conforming to a user-defined artificial grammar. It was developed to investigate how humans learn hierarchical structure in novel pitch systems through auditory exposure. Key features include:
+This repository contains a Hidden Markov Model (HMM)-based Python tool for generating musically informed chord and pitch sequences. It simulates probabilistic musical grammar, with an emphasis on realistic transitions, constrained pitch repetition, and harmonically meaningful sequences — suitable for auditory neuroscience, BCI stimulus creation, or music cognition experiments.
 
-**Finite-state grammar implementation**: Define transition rules between discrete pitch classes to simulate structured but unfamiliar tonal systems.
+---
 
-**Pseudo-randomized sequence generation**: Create unique sequences that maintain grammatical constraints while minimizing repetition.
+## 🧠 Purpose
+
+To generate synthetic chord sequences governed by a structured probabilistic grammar. These sequences can be used as stimuli for behavioral or neuroimaging studies investigating musical expectation, prediction, or perception.
+
+---
+
+## 🚀 Features
+
+- Hidden Markov model (HMM)–based state transitions between chords
+- Transition matrix tailored to reflect harmonic structure
+- Constrained pitch selection with probabilistic weighting
+- Repetition-avoidance logic for pitch realism
+- Output in both **chord sequences** and **flattened pitch sequences**
+- Probabilistic weighting favors cadences and closure on final chords
+
+---
+
+## 📜 Script Overview
+
+### `1st_grammar_seq_generator.py`
+
+This script includes:
+
+- `generate_chord_sequence(length)`:  
+  Constructs a sequence of chords based on an HMM-like transition matrix.
+
+- `pitch_from_chord_sequence(chord_sequence)`:  
+  Samples pitches from each chord with weighted probabilities and repetition suppression.
+
+- `main()`:  
+  Generates a batch of sequences and stores them in memory. Configurable for experimental batch runs.
+
+---
+
+
+## 💡 Future Directions
+
+MIDI/audio export of sequences
+Integration with timbre synthesis engines
+Visualization of transition probabilities
+Extension to polyphonic or rhythmic structures
 
 ## Citation 
 
