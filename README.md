@@ -6,3 +6,10 @@ This custom Python tool generates monophonic note sequences conforming to a user
 **Finite-state grammar implementation**: Define transition rules between discrete pitch classes to simulate structured but unfamiliar tonal systems.
 
 **Pseudo-randomized sequence generation**: Create unique sequences that maintain grammatical constraints while minimizing repetition.
+
+If you use this tool in your own work, please cite:
+
+```
+spraveena. (2024). spraveena/ArtificialGrammarGenerator: Hidden Markov Model (HMM) for
+Chord Sequence Generation (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13937536
+```
