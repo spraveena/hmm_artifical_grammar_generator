@@ -41,10 +41,10 @@ This script includes:
 
 ## 💡 Future Directions
 
-MIDI/audio export of sequences
-Integration with timbre synthesis engines
-Visualization of transition probabilities
-Extension to polyphonic or rhythmic structures
+- MIDI/audio export of sequences
+- Integration with timbre synthesis engines
+- Visualization of transition probabilities
+- Extension to polyphonic or rhythmic structures
 
 ## 📖 Citation 
 
