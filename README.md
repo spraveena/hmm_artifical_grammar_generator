@@ -46,7 +46,7 @@ Integration with timbre synthesis engines
 Visualization of transition probabilities
 Extension to polyphonic or rhythmic structures
 
-## Citation 
+## 📖 Citation 
 
 If you use this tool in your own work, please cite:
 
